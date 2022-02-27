@@ -5,7 +5,7 @@ export default function Posts() {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
     //fetch('localhost:5001/api/posts')
-    fetch('https://jsonplaceholder.typicode.com/posts')
+    fetch('https://localhost:8080/posts')
     .then((res) => res.json())
     .then((data) => {
       setPosts(data);
